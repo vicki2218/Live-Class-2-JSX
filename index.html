@@ -1,34 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding for consistent text rendering -->
     <meta charset="UTF-8">
+    <!-- Makes layout responsive on phones and tablets -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Browser tab title -->
     <title>Pricing Plans — HTML version</title>
+    <!-- Performance hint: connect to Google Fonts early -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Performance hint for static font files -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Loads the Inter typeface used by the design -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Project stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Small label to identify this page variant -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Main wrapper for all pricing cards -->
     <div class="cards-container">
+        <!-- Card 1: Hobby plan -->
         <div class="card">
+            <!-- Top content area (title, price, features) -->
             <div class="card-top">
                 <h3 class="card-title">Hobby</h3>
+                <!-- Price row -->
                 <p class="card-price">
+                    <!-- Main price value -->
                     <span class="card-price-amount">Free</span>
                 </p>
+
+                <!-- Feature list area -->
                 <div class="card-content">
+                    <!-- Intro label for included features -->
                     <p class="includes-text">Includes:</p>
                     <ul class="features-list">
+                        <!-- Feature item -->
                         <li>
                             <span class="checkmark">✓</span>
                             No credit card required
                         </li>
+                        <!-- Feature item -->
                         <li>
                             <span class="checkmark">✓</span>
                             Limited Agent requests
                         </li>
+                        <!-- Feature item -->
                         <li>
                             <span class="checkmark">✓</span>
                             Limited Tab completions
@@ -36,30 +56,39 @@
                     </ul>
                 </div>
             </div>
+            <!-- Secondary call-to-action button -->
             <button class="download-button secondary">Download</button>
         </div>
+
+        <!-- Card 2: Pro plan -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Pro</h3>
                 <p class="card-price">
+                    <!-- Main price value -->
                     <span class="card-price-amount">$20</span>
+                    <!-- Billing cadence -->
                     <span class="card-price-period">/mo.</span>
                 </p>
                 <div class="card-content">
                     <p class="includes-text">Everything in Hobby, plus:</p>
                     <ul class="features-list">
+                        <!-- Feature item -->
                         <li>
                             <span class="checkmark">✓</span>
                             Extended limits on Agent
                         </li>
+                        <!-- Feature item -->
                         <li>
                             <span class="checkmark">✓</span>
                             Unlimited Tab completions
                         </li>
+                        <!-- Feature item -->
                         <li>
                             <span class="checkmark">✓</span>
                             Background Agents
                         </li>
+                        <!-- Feature item -->
                         <li>
                             <span class="checkmark">✓</span>
                             Maximum context windows
@@ -67,7 +96,41 @@
                     </ul>
                 </div>
             </div>
+            <!-- Primary call-to-action button -->
             <button class="download-button primary">Get Pro</button>
+        </div>
+
+        <!-- Card 3: Enterprise plan -->
+        <div class="card">
+            <div class="card-top">
+                <h3 class="card-title">Enterprise</h3>
+                <p class="card-price">
+                    <span class="card-price-amount">$75</span>
+                    <span class="card-price-period">/mo.</span>
+                </p>
+                <div class="card-content">
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Dedicated support
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Team management controls
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Custom security policies
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Advanced analytics
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="download-button primary">Contact Sales</button>
         </div>
     </div>
 </body>
