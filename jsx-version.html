@@ -57,9 +57,14 @@
                 title: 'Hobby',
                 price: 'Free',
                 includesText: 'Includes:',
-                features: ['No credit card required', 'Limited Agent requests', 'Limited Tab completions'],
-                buttonText: 'Download',
-                buttonVariant: 'secondary',
+                features: [
+                    'No credit card required', 
+                    'Limited Agent requests', 
+                    'Limited Tab completions', 
+                    'Limited context windows'
+                ],
+                buttonText: 'Start for free',
+                buttonVariant: 'tertiary',
             };
             const proPlan = {
                 title: 'Pro',
@@ -72,16 +77,20 @@
                     'Maximum context windows',
                 ],
                 buttonText: 'Get Pro',
-                buttonVariant: 'primary',
+                buttonVariant: 'secondary',
             };
 
             const enterprisePlan = {
                 title: 'Enterprise',
                 price: '$100/mo.',
                 includesText: 'Everything in Pro, plus:',
-                features: ['Priority support', 'Custom integrations', 'Advanced reporting'],
+                features: [
+                    'Priority support',
+                     'Custom integrations', 
+                     'Advanced reporting'
+                    ],
                 buttonText: 'Contact Sales',
-                buttonVariant: 'secondary',
+                buttonVariant: 'primary',
             };
             return (
                 // <> is a React Fragment - it groups elements without adding extra HTML divs
